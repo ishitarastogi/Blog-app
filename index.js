@@ -8,9 +8,7 @@ const userRoute = require('./routes/users');
 const authRoute = require('./routes/auth');
 
 dotenv.config();
-mongoose.connect(process.env.MONGO_URL,()=>{
-    console.log('connect to dbs')
-});
+mongoose.connect('mongodb+srv://Ishita:Ishitaa@cluster0.aryi0.mongodb.net/social-media?retryWrites=true&w=majority');
  
 
 //middleware
